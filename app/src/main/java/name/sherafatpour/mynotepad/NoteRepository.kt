@@ -10,6 +10,12 @@ import name.sherafatpour.mynotepad.room.NoteDatabase
 class NoteRepository(application: Application?) {
     private val noteDao: NoteDao
     val allNotes: LiveData<List<Note>>
+
+    init {
+        val database = NoteDatabase.getInstance(application!!)
+        noteDao = database!!.noteDao()
+        allNotes = noteDao.allNotes
+    }
     fun insert(note: Note?) {
         InsertNoteAsyncTask(noteDao).execute(note)
     }
@@ -67,9 +73,5 @@ class NoteRepository(application: Application?) {
 
     }
 
-    init {
-        val database = NoteDatabase.getInstance(application)
-        noteDao = database.noteDao()
-        allNotes = noteDao.allNotes
-    }
+
 }
