@@ -133,10 +133,10 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="491" y="88" key="#com.intellij.ide.util.MemberChooser" timestamp="1597319294714">
+    <state x="491" y="88" key="#com.intellij.ide.util.MemberChooser" timestamp="1597321119534">
       <screen x="0" y="27" width="1366" height="715" />
     </state>
-    <state x="491" y="88" key="#com.intellij.ide.util.MemberChooser/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597319294714" />
+    <state x="491" y="88" key="#com.intellij.ide.util.MemberChooser/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597321119534" />
     <state x="445" y="27" width="478" height="715" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1597319661887">
       <screen x="0" y="27" width="1366" height="715" />
     </state>
@@ -145,5 +145,9 @@
       <screen x="0" y="27" width="1366" height="715" />
     </state>
     <state x="179" y="27" key="SettingsEditor/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597318408611" />
+    <state x="421" y="77" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1597321210750">
+      <screen x="0" y="27" width="1366" height="715" />
+    </state>
+    <state x="421" y="77" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597321210750" />
   </component>
 </project>
