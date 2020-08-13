@@ -15,7 +15,7 @@ interface NoteDao {
     fun delete(note: Note?)
 
     @Query("DELETE  FROM note_table")
-    fun deleteAllNotes(note: Note?)
+    fun deleteAllNotes()
 
     @get:Query("SELECT * FROM note_table ORDER BY priority DESC")
     val allNotes: LiveData<List<Note>>

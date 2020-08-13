@@ -133,14 +133,30 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="491" y="88" key="#com.intellij.ide.util.MemberChooser" timestamp="1597321119534">
+    <state x="491" y="88" key="#com.intellij.ide.util.MemberChooser" timestamp="1597340345676">
       <screen x="0" y="27" width="1366" height="715" />
     </state>
-    <state x="491" y="88" key="#com.intellij.ide.util.MemberChooser/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597321119534" />
+    <state x="491" y="88" key="#com.intellij.ide.util.MemberChooser/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597340345676" />
     <state x="445" y="27" width="478" height="715" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1597319661887">
       <screen x="0" y="27" width="1366" height="715" />
     </state>
     <state x="445" y="27" width="478" height="715" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597319661887" />
+    <state width="1320" height="95" key="GridCell.Tab.0.bottom" timestamp="1597340156635">
+      <screen x="0" y="27" width="1366" height="715" />
+    </state>
+    <state width="1320" height="95" key="GridCell.Tab.0.bottom/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597340156635" />
+    <state width="1320" height="95" key="GridCell.Tab.0.center" timestamp="1597340156635">
+      <screen x="0" y="27" width="1366" height="715" />
+    </state>
+    <state width="1320" height="95" key="GridCell.Tab.0.center/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597340156635" />
+    <state width="1320" height="95" key="GridCell.Tab.0.left" timestamp="1597340156635">
+      <screen x="0" y="27" width="1366" height="715" />
+    </state>
+    <state width="1320" height="95" key="GridCell.Tab.0.left/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597340156635" />
+    <state width="1320" height="95" key="GridCell.Tab.0.right" timestamp="1597340156635">
+      <screen x="0" y="27" width="1366" height="715" />
+    </state>
+    <state width="1320" height="95" key="GridCell.Tab.0.right/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597340156635" />
     <state x="179" y="27" key="SettingsEditor" timestamp="1597318408611">
       <screen x="0" y="27" width="1366" height="715" />
     </state>
