@@ -1,4 +1,4 @@
-package name.sherafatpour.mynotepad
+package name.sherafatpour.mynotepad.room
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
