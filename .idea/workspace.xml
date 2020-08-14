@@ -34,6 +34,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -51,10 +53,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="PsdUISettings">
@@ -144,49 +146,72 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="203" y="123" key="#PSD" timestamp="1597341185985">
+    <state x="203" y="123" key="#PSD" timestamp="1597384886806">
       <screen x="0" y="27" width="1366" height="715" />
     </state>
-    <state x="203" y="123" key="#PSD/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597341185985" />
+    <state x="203" y="123" key="#PSD/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597384886806" />
     <state x="352" y="29" width="651" height="736" key="#app" timestamp="1597342999675">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="352" y="29" width="651" height="736" key="#app/0.27.1366.741/1366.0.1024.768/2390.0.1024.768@0.27.1366.741" timestamp="1597342999675" />
-    <state x="491" y="88" key="#com.intellij.ide.util.MemberChooser" timestamp="1597342238165">
-      <screen x="0" y="27" width="1366" height="715" />
+    <state x="491" y="94" width="444" height="565" key="#com.intellij.ide.util.MemberChooser" timestamp="1597388975551">
+      <screen x="0" y="31" width="1366" height="737" />
     </state>
     <state x="491" y="88" key="#com.intellij.ide.util.MemberChooser/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597342238165" />
+    <state x="491" y="94" width="444" height="565" key="#com.intellij.ide.util.MemberChooser/0.31.1366.737/1366.0.1024.768@0.31.1366.737" timestamp="1597388975551" />
     <state x="445" y="27" width="478" height="715" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1597319661887">
       <screen x="0" y="27" width="1366" height="715" />
     </state>
     <state x="445" y="27" width="478" height="715" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597319661887" />
-    <state width="1175" height="92" key="GridCell.Tab.0.bottom" timestamp="1597343140288">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1320" height="96" key="GridCell.Tab.0.bottom/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597342374746" />
-    <state width="1175" height="92" key="GridCell.Tab.0.bottom/0.27.1366.741/1366.0.1024.768/2390.0.1024.768@0.27.1366.741" timestamp="1597343140288" />
-    <state width="1175" height="92" key="GridCell.Tab.0.center" timestamp="1597343140287">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1320" height="96" key="GridCell.Tab.0.center/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597342374746" />
-    <state width="1175" height="92" key="GridCell.Tab.0.center/0.27.1366.741/1366.0.1024.768/2390.0.1024.768@0.27.1366.741" timestamp="1597343140287" />
-    <state width="1175" height="92" key="GridCell.Tab.0.left" timestamp="1597343140286">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1320" height="96" key="GridCell.Tab.0.left/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597342374746" />
-    <state width="1175" height="92" key="GridCell.Tab.0.left/0.27.1366.741/1366.0.1024.768/2390.0.1024.768@0.27.1366.741" timestamp="1597343140286" />
-    <state width="1175" height="92" key="GridCell.Tab.0.right" timestamp="1597343140288">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1320" height="96" key="GridCell.Tab.0.right/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597342374746" />
-    <state width="1175" height="92" key="GridCell.Tab.0.right/0.27.1366.741/1366.0.1024.768/2390.0.1024.768@0.27.1366.741" timestamp="1597343140288" />
-    <state x="179" y="27" key="SettingsEditor" timestamp="1597318408611">
+    <state x="266" y="145" width="834" height="482" key="AndroidCreateResourceFileDialog" timestamp="1597385021299">
       <screen x="0" y="27" width="1366" height="715" />
     </state>
+    <state x="266" y="145" width="834" height="482" key="AndroidCreateResourceFileDialog/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597385021299" />
+    <state x="538" y="204" width="298" height="358" key="AndroidCreateXmlResourceDialog" timestamp="1597387535896">
+      <screen x="0" y="31" width="1366" height="737" />
+    </state>
+    <state x="538" y="195" key="AndroidCreateXmlResourceDialog/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597385324771" />
+    <state x="538" y="204" width="298" height="358" key="AndroidCreateXmlResourceDialog/0.31.1366.737/1366.0.1024.768@0.31.1366.737" timestamp="1597387535896" />
+    <state x="466" y="160" width="434" height="487" key="FileChooserDialogImpl" timestamp="1597388078490">
+      <screen x="0" y="31" width="1366" height="737" />
+    </state>
+    <state x="466" y="160" width="434" height="487" key="FileChooserDialogImpl/0.31.1366.737/1366.0.1024.768@0.31.1366.737" timestamp="1597388078490" />
+    <state width="1320" height="453" key="GridCell.Tab.0.bottom" timestamp="1597391107175">
+      <screen x="0" y="31" width="1366" height="737" />
+    </state>
+    <state width="1320" height="114" key="GridCell.Tab.0.bottom/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597384785681" />
+    <state width="1320" height="153" key="GridCell.Tab.0.bottom/0.27.1366.741/1366.0.1024.768/2390.0.1024.768@0.27.1366.741" timestamp="1597343343924" />
+    <state width="1320" height="453" key="GridCell.Tab.0.bottom/0.31.1366.737/1366.0.1024.768@0.31.1366.737" timestamp="1597391107175" />
+    <state width="1320" height="453" key="GridCell.Tab.0.center" timestamp="1597391107174">
+      <screen x="0" y="31" width="1366" height="737" />
+    </state>
+    <state width="1320" height="114" key="GridCell.Tab.0.center/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597384785681" />
+    <state width="1320" height="153" key="GridCell.Tab.0.center/0.27.1366.741/1366.0.1024.768/2390.0.1024.768@0.27.1366.741" timestamp="1597343343924" />
+    <state width="1320" height="453" key="GridCell.Tab.0.center/0.31.1366.737/1366.0.1024.768@0.31.1366.737" timestamp="1597391107174" />
+    <state width="1320" height="453" key="GridCell.Tab.0.left" timestamp="1597391107173">
+      <screen x="0" y="31" width="1366" height="737" />
+    </state>
+    <state width="1320" height="114" key="GridCell.Tab.0.left/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597384785680" />
+    <state width="1320" height="153" key="GridCell.Tab.0.left/0.27.1366.741/1366.0.1024.768/2390.0.1024.768@0.27.1366.741" timestamp="1597343343924" />
+    <state width="1320" height="453" key="GridCell.Tab.0.left/0.31.1366.737/1366.0.1024.768@0.31.1366.737" timestamp="1597391107173" />
+    <state width="1320" height="453" key="GridCell.Tab.0.right" timestamp="1597391107174">
+      <screen x="0" y="31" width="1366" height="737" />
+    </state>
+    <state width="1320" height="114" key="GridCell.Tab.0.right/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597384785681" />
+    <state width="1320" height="153" key="GridCell.Tab.0.right/0.27.1366.741/1366.0.1024.768/2390.0.1024.768@0.27.1366.741" timestamp="1597343343924" />
+    <state width="1320" height="453" key="GridCell.Tab.0.right/0.31.1366.737/1366.0.1024.768@0.31.1366.737" timestamp="1597391107174" />
+    <state x="179" y="31" width="1022" height="733" key="SettingsEditor" timestamp="1597388099979">
+      <screen x="0" y="31" width="1366" height="737" />
+    </state>
     <state x="179" y="27" key="SettingsEditor/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597318408611" />
+    <state x="179" y="31" width="1022" height="733" key="SettingsEditor/0.31.1366.737/1366.0.1024.768@0.31.1366.737" timestamp="1597388099979" />
     <state x="421" y="77" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1597321210750">
       <screen x="0" y="27" width="1366" height="715" />
     </state>
     <state x="421" y="77" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597321210750" />
+    <state x="274" y="123" key="psd.add.library.dependency.panel.dimension" timestamp="1597384885034">
+      <screen x="0" y="27" width="1366" height="715" />
+    </state>
+    <state x="274" y="123" key="psd.add.library.dependency.panel.dimension/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597384885034" />
   </component>
 </project>

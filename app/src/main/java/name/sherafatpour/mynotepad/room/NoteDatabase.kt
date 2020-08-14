@@ -23,6 +23,7 @@ abstract class NoteDatabase : RoomDatabase() {
                 )
                     .fallbackToDestructiveMigration()
                     .addCallback(roomCallback)
+                    .allowMainThreadQueries()
                     .build()
             }
             return instance
