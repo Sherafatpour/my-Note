@@ -13,6 +13,15 @@
     app:layout_constraintBottom_toTopOf="parent"
     app:layout_constraintLeft_toLeftOf="parent"
     tools:listitem="@layout/note_item"
+    tools:itemCount="50"
     app:layout_constraintRight_toRightOf="parent"/>
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+   android:id="@+id/addNote"
+    android:src="@drawable/ic_add"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_margin="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

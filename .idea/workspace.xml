@@ -36,6 +36,7 @@
         <option value="Class" />
         <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -63,6 +64,9 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.-1850492456">
+      <recent name="name.sherafatpour.mynotepad" />
+    </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="name.sherafatpour.mynotepad.room" />
     </key>
@@ -154,10 +158,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="352" y="29" width="651" height="736" key="#app/0.27.1366.741/1366.0.1024.768/2390.0.1024.768@0.27.1366.741" timestamp="1597342999675" />
-    <state x="491" y="88" width="444" height="565" key="#com.intellij.ide.util.MemberChooser" timestamp="1597857118305">
+    <state x="491" y="88" width="444" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1597860539631">
       <screen x="0" y="27" width="1366" height="715" />
     </state>
-    <state x="491" y="88" key="#com.intellij.ide.util.MemberChooser/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597857118305" />
+    <state x="491" y="88" width="444" height="560" key="#com.intellij.ide.util.MemberChooser/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597860539631" />
     <state x="491" y="94" width="444" height="565" key="#com.intellij.ide.util.MemberChooser/0.31.1366.737/1366.0.1024.768@0.31.1366.737" timestamp="1597388975551" />
     <state x="366" y="116" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1597853414950">
       <screen x="0" y="27" width="1366" height="715" />
@@ -167,14 +171,14 @@
       <screen x="0" y="27" width="1366" height="715" />
     </state>
     <state x="445" y="27" width="478" height="715" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597319661887" />
-    <state x="266" y="145" width="834" height="482" key="AndroidCreateResourceFileDialog" timestamp="1597385021299">
+    <state x="266" y="145" width="834" height="482" key="AndroidCreateResourceFileDialog" timestamp="1597860989436">
       <screen x="0" y="27" width="1366" height="715" />
     </state>
-    <state x="266" y="145" width="834" height="482" key="AndroidCreateResourceFileDialog/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597385021299" />
-    <state x="538" y="204" width="298" height="358" key="AndroidCreateXmlResourceDialog" timestamp="1597387535896">
-      <screen x="0" y="31" width="1366" height="737" />
+    <state x="266" y="145" width="834" height="482" key="AndroidCreateResourceFileDialog/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597860989436" />
+    <state x="538" y="195" width="289" height="384" key="AndroidCreateXmlResourceDialog" timestamp="1597864264386">
+      <screen x="0" y="27" width="1366" height="715" />
     </state>
-    <state x="538" y="195" key="AndroidCreateXmlResourceDialog/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597385324771" />
+    <state x="538" y="195" width="289" height="384" key="AndroidCreateXmlResourceDialog/0.27.1366.715/1366.0.1024.768@0.27.1366.715" timestamp="1597864264386" />
     <state x="538" y="204" width="298" height="358" key="AndroidCreateXmlResourceDialog/0.31.1366.737/1366.0.1024.768@0.31.1366.737" timestamp="1597387535896" />
     <state x="466" y="160" width="434" height="487" key="FileChooserDialogImpl" timestamp="1597388078490">
       <screen x="0" y="31" width="1366" height="737" />

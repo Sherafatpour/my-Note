@@ -2,4 +2,7 @@
     <string name="app_name">My Noti</string>
     <string name="card_item_title">title</string>
     <string name="card_item_priority">1</string>
+    <string name="save">save</string>
+    <string name="title">title</string>
+    <string name="description">description</string>
 </resources>
