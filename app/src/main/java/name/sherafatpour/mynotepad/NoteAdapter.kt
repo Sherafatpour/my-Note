@@ -12,10 +12,15 @@ class NoteAdapter : RecyclerView.Adapter<NoteAdapter.ViewHolder>() {
 
     private var notes :List<Note> = ArrayList()
 
-    public fun setNote(notes: List<Note>){
+    fun setNote(notes: List<Note>){
         this.notes = notes
         notifyDataSetChanged()
     }
+
+  fun getNoteAt(position:Int):Note{
+
+      return notes[position]
+  }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
