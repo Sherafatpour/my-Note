@@ -14,7 +14,7 @@ interface NoteDao {
     @Delete
     fun delete(note: Note?)
 
-    @Query("DELETE  FROM note_table")
+    @Query("DELETE FROM note_table")
     fun deleteAllNotes()
 
     @get:Query("SELECT * FROM note_table ORDER BY priority DESC")

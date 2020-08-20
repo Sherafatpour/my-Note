@@ -5,4 +5,6 @@
     <string name="save">save</string>
     <string name="title">title</string>
     <string name="description">description</string>
+    <string name="empty_list">empty_list</string>
+    <string name="you_r_list_is_empty">You`r List is Empty</string>
 </resources>

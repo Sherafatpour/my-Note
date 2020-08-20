@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
        val adapter = NoteAdapter()
         noteViewModel = ViewModelProviders.of(this).get(NoteViewModel::class.java);
         noteRecyclerview.layoutManager = LinearLayoutManager(this)
@@ -55,6 +57,15 @@ class MainActivity : AppCompatActivity() {
 
         noteViewModel.getAllNote()!!.observe(this) { notesList ->
 
+            if (notesList.isEmpty()){
+
+                nothing.visibility = View.VISIBLE
+                text.visibility = View.VISIBLE
+            }else {
+                nothing.visibility = View.GONE
+                text.visibility = View.GONE
+
+            }
             adapter.submitList(notesList)
 
         }
@@ -90,16 +101,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
+        return when(item.itemId){
             R.id.delete_all_notes->{
                 noteViewModel.deleteAllNotes()
                 Toast.makeText(this@MainActivity,"Delete All Notes",Toast.LENGTH_LONG).show()
-                return true
+                true
             }else->{
 
-            return super.onOptionsItemSelected(item)
+                super.onOptionsItemSelected(item)
 
-        }
+            }
 
         }
 
