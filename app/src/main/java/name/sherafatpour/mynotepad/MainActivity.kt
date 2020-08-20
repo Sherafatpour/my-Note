@@ -16,19 +16,23 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.note_item.*
 import name.sherafatpour.mynotepad.room.Note
 
 class MainActivity : AppCompatActivity() {
-    companion object{val ADD_NOTE_REQUEST = 1 }
+
+    companion object{
+        val ADD_NOTE_REQUEST = 1
+        val EDIT_NOTE_REQUEST = 2
+    }
     lateinit var noteViewModel: NoteViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+       val adapter = NoteAdapter()
         noteViewModel = ViewModelProviders.of(this).get(NoteViewModel::class.java);
         noteRecyclerview.layoutManager = LinearLayoutManager(this)
         noteRecyclerview.setHasFixedSize(true)
-        val adapter = NoteAdapter()
         noteRecyclerview.adapter = adapter
 
        ItemTouchHelper( object : ItemTouchHelper.SimpleCallback(0 , ItemTouchHelper.LEFT or  ItemTouchHelper.RIGHT ){
@@ -51,7 +55,7 @@ class MainActivity : AppCompatActivity() {
 
         noteViewModel.getAllNote()!!.observe(this) { notesList ->
 
-            adapter.setNote(notesList)
+            adapter.submitList(notesList)
 
         }
 
@@ -60,6 +64,22 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity,AddNoteActivity::class.java )
             startActivityForResult(intent, ADD_NOTE_REQUEST)
         }
+
+
+        adapter.setOnItemClickListener(object : NoteAdapter.OnItemClickListener{
+            override fun onItemClick(note: Note) {
+
+                val intent =Intent(this@MainActivity , AddNoteActivity::class.java)
+                intent.putExtra(AddNoteActivity.EXTRA_ID , note.id)
+                intent.putExtra(AddNoteActivity.EXTRA_TITLE , note.title)
+                intent.putExtra(AddNoteActivity.EXTRA_DESCRIPTION , note.description)
+                intent.putExtra(AddNoteActivity.EXTRA_PRIORITY , note.priority)
+                startActivityForResult(intent, EDIT_NOTE_REQUEST)
+
+            }
+
+        })
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -98,6 +118,28 @@ class MainActivity : AppCompatActivity() {
             noteViewModel.insert(note)
 
             Toast.makeText(this@MainActivity,"Note Saved",Toast.LENGTH_LONG).show()
+
+
+        }else if(requestCode == EDIT_NOTE_REQUEST && resultCode == RESULT_OK){
+
+
+            val  id = data!!.getIntExtra(AddNoteActivity.EXTRA_ID,-1)
+            val  title = data.getStringExtra(AddNoteActivity.EXTRA_TITLE)
+            val  desc = data.getStringExtra(AddNoteActivity.EXTRA_DESCRIPTION)
+            val  priority = data.getIntExtra(AddNoteActivity.EXTRA_PRIORITY,1)
+
+            if (id == -1){
+
+                Toast.makeText(this@MainActivity,"Can't be updated",Toast.LENGTH_LONG).show()
+                return
+            }
+            val note = Note(title!!,desc!!,priority);
+            note.id = id
+            noteViewModel.update(note)
+            Toast.makeText(this@MainActivity,"Note Updated",Toast.LENGTH_LONG).show()
+
+        }else{
+            Toast.makeText(this@MainActivity,"Note Not Saved",Toast.LENGTH_LONG).show()
 
 
         }

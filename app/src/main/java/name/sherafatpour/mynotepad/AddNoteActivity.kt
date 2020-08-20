@@ -12,6 +12,7 @@ class AddNoteActivity : AppCompatActivity() {
 
     companion object{
 
+        var EXTRA_ID = "name.sherafatpour.mynotepad.EXTRA_ID"
         var EXTRA_TITLE = "name.sherafatpour.mynotepad.EXTRA_TITLE"
         var EXTRA_DESCRIPTION = "name.sherafatpour.mynotepad.DESCRIPTION"
         var EXTRA_PRIORITY = "name.sherafatpour.mynotepad.PRIORITY"
@@ -26,6 +27,21 @@ class AddNoteActivity : AppCompatActivity() {
         number_picker_priority.maxValue = 10
 
         supportActionBar!!.setHomeAsUpIndicator(R.drawable.ic_close)
+
+if (intent.hasExtra(EXTRA_ID)){
+
+    title = "Edite Note"
+    edit_text_title.setText(intent.getStringExtra(EXTRA_TITLE).toString())
+    edit_text_description.setText(intent.getStringExtra(EXTRA_DESCRIPTION).toString())
+    number_picker_priority.value = intent.getIntExtra(EXTRA_TITLE,1)
+
+
+
+}else{
+
+    title = "Add Note"
+
+}
 
     }
 
@@ -42,7 +58,6 @@ class AddNoteActivity : AppCompatActivity() {
         return when(item.itemId){
             R.id.save_note->{
                 saveNote()
-                Toast.makeText(this@AddNoteActivity,"added a Note",Toast.LENGTH_LONG).show()
                 true
             }else->{
 
@@ -58,9 +73,10 @@ class AddNoteActivity : AppCompatActivity() {
 
         val title = edit_text_title.text.toString()
         val description = edit_text_description.text.toString()
-        var priority = number_picker_priority.value
+        val priority = number_picker_priority.value
 
-        if (title.trim().isEmpty() || description.trim().isEmpty()){
+
+            if (title.trim().isEmpty() || description.trim().isEmpty()){
 
             Toast.makeText(this@AddNoteActivity,"Please insert  a title and description",Toast.LENGTH_LONG).show()
 
@@ -69,11 +85,17 @@ class AddNoteActivity : AppCompatActivity() {
 
 
         val data = Intent()
-
         data.putExtra(EXTRA_TITLE,title)
         data.putExtra(EXTRA_DESCRIPTION,description)
         data.putExtra(EXTRA_PRIORITY,priority)
+
+        val id  = intent.getIntExtra(EXTRA_ID,-1)
+        if (id != -1){
+            data.putExtra(EXTRA_ID,id)
+
+        }
         setResult(RESULT_OK , data)
         finish()
+
     }
 }
