@@ -1,3 +1,4 @@
 # my-Note
 
-this application created by Dagger2 , mvvm , livedata
+this application created by Android Architecture Components   
+
